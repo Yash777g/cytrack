@@ -1,0 +1,16 @@
+# CyTrack Frontend Requirements
+# Install with: pip install -r requirements.txt
+
+# ── Core ──────────────────────────────────────────────────────────────────────
+streamlit==1.62.0           # UI framework
+
+# ── API communication (for FastAPI wiring phase) ──────────────────────────────
+requests==2.33.1            # REST calls to FastAPI backend
+websockets==16.1.1          # WebSocket connection for live scan logs
+
+# ── Indirect / pinned for stability ───────────────────────────────────────────
+# These are pulled in by streamlit but pinned to avoid breaking changes
+altair>=5.0.0               # Streamlit chart dependency
+pandas>=2.0.0               # Streamlit data dependency
+Pillow>=10.0.0              # Image handling in Streamlit
+watchdog>=3.0.0             # File watching for hot reload in dev
