@@ -1,4 +1,8 @@
  .venv/
- __pycache__/
-   *.pyc
-   
+  __pycache__/
+  *.pyc
+   .env
+    outputs/
+    crawler/crawl_output.json
+    test.json
+     *.report.json
