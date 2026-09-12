@@ -1,0 +1,4959 @@
+{
+  "meta": {
+    "tool": "Hellhound Spider v13.19",
+    "target": "http://localhost:3000/"
+  },
+  "summary": {
+    "total_endpoints": 116,
+    "confirmed": 2,
+    "high": 45,
+    "auth_required": 7,
+    "parameter_sensitive": 0,
+    "secrets": 7,
+    "credentials_exposed": 0,
+    "cors_issues": 0,
+    "graphql_exposed": 0,
+    "openapi_exposed": 0,
+    "sourcemaps_exposed": 0,
+    "tech_stack": [],
+    "whatweb_data": {},
+    "admin_panels": 0,
+    "auth_endpoints": 0,
+    "upload_endpoints": 1,
+    "extracted_data": 1,
+    "robots_disallowed": 1,
+    "robots_allowed": 0,
+    "screenshots": 0,
+    "js_orphan_param_files": 3,
+    "js_orphan_param_count": 12,
+    "websocket_detected": false,
+    "socketio_count": 0,
+    "crt_subdomain_count": 0,
+    "waf_detected": false,
+    "waf_count": 0,
+    "tls_issues": 1,
+    "header_issues": 4,
+    "dns_issues": 0,
+    "sensitive_files_found": 0,
+    "js_vulnerable_libs": 0,
+    "cloud_bucket_issues": 0,
+    "unauthenticated_apis": 0,
+    "sensitive_data_sources": 0,
+    "legacy_endpoints": 0,
+    "dynamic_value_endpoints": 0
+  },
+  "endpoints": [
+    {
+      "url": "http://localhost:3000/ftp",
+      "cluster": "/ftp",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [
+        200
+      ],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "Robots_Disallow",
+        "HTML(Robots_Disallow)"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/.well-known/security.txt",
+      "cluster": "/.well-known/security.txt",
+      "method": "GET",
+      "confidence": "LOW",
+      "confidence_score": 1,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "WellKnown"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "https://keybase.io/bkimminich/pgp_keys.asc?fingerprint=19c01cb7157e4645e9e2c863062a85a8cbfbdcda",
+      "cluster": "/bkimminich/pgp_keys.asc?fingerprint=",
+      "method": "GET",
+      "confidence": "LOW",
+      "confidence_score": 2,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "SecurityTxt"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/#/score-board",
+      "cluster": "/",
+      "method": "GET",
+      "confidence": "HIGH",
+      "confidence_score": 7,
+      "observed_status": [
+        200
+      ],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "SecurityTxt",
+        "HTML(Seed)"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/.well-known/csaf/provider-metadata.json",
+      "cluster": "/.well-known/csaf/provider-metadata.json",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [
+        200
+      ],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "SecurityTxt",
+        "JSON_Response"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/juice-shop/juice-shop",
+      "cluster": "/juice-shop/juice-shop",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [
+        200
+      ],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JSON_Path",
+        "HTML(JSON_Path)"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rolldown-runtime-BoHGiXSq.js",
+      "cluster": "/rolldown-runtime-BoHGiXSq.js",
+      "method": "GET",
+      "confidence": "LOW",
+      "confidence_score": 1,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_File"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/chunk-DBPdFzgj.js",
+      "cluster": "/chunk-DBPdFzgj.js",
+      "method": "GET",
+      "confidence": "LOW",
+      "confidence_score": 1,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_File"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/polyfills.js",
+      "cluster": "/polyfills.js",
+      "method": "GET",
+      "confidence": "LOW",
+      "confidence_score": 1,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_File"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/scripts.js",
+      "cluster": "/scripts.js",
+      "method": "GET",
+      "confidence": "LOW",
+      "confidence_score": 1,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_File"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/v3/ip-country/",
+      "cluster": "/v3/ip-country",
+      "method": "GET",
+      "confidence": "HIGH",
+      "confidence_score": 7,
+      "observed_status": [],
+      "params": [
+        "callback",
+        "format",
+        "key"
+      ],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [
+          "key",
+          "format",
+          "callback"
+        ],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/js/apis/geoip2/v2.1/geoip2.js",
+      "cluster": "/js/apis/geoip2/v2.1/geoip2.js",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/chunk-DHEKzj3R.js",
+      "cluster": "/chunk-DHEKzj3R.js",
+      "method": "GET",
+      "confidence": "LOW",
+      "confidence_score": 1,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_File"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/chunk-BdI65YMF.js",
+      "cluster": "/chunk-BdI65YMF.js",
+      "method": "GET",
+      "confidence": "LOW",
+      "confidence_score": 1,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_File"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/main.js",
+      "cluster": "/main.js",
+      "method": "GET",
+      "confidence": "LOW",
+      "confidence_score": 1,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_File"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/api/Feedbacks",
+      "cluster": "/api/Feedbacks",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/web3",
+      "cluster": "/rest/web3",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/nftUnlocked",
+      "cluster": "/nftUnlocked",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/nftMintListen",
+      "cluster": "/nftMintListen",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/api/Challenges/",
+      "cluster": "/api/Challenges",
+      "method": "GET",
+      "confidence": "CONFIRMED",
+      "confidence_score": 10,
+      "observed_status": [],
+      "params": [
+        "key"
+      ],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [
+          "key"
+        ],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/submitKey",
+      "cluster": "/submitKey",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/walletNFTVerify",
+      "cluster": "/walletNFTVerify",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/walletExploitAddress",
+      "cluster": "/{val}",
+      "method": "GET",
+      "confidence": "CONFIRMED",
+      "confidence_score": 10,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/repeat-notification",
+      "cluster": "/rest/repeat-notification",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/continue-code",
+      "cluster": "/rest/continue-code",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/continue-code-findIt",
+      "cluster": "/rest/continue-code-findIt",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/continue-code-fixIt",
+      "cluster": "/rest/continue-code-fixIt",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/continue-code/apply/",
+      "cluster": "/rest/continue-code/apply",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/continue-code-findIt/apply/",
+      "cluster": "/rest/continue-code-findIt/apply",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/continue-code-fixIt/apply/",
+      "cluster": "/rest/continue-code-fixIt/apply",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/address/edit/",
+      "cluster": "/address/edit",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/api/Users",
+      "cluster": "/api/Users",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/user/authentication-details/",
+      "cluster": "/rest/user/authentication-details",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/user/login",
+      "cluster": "/rest/user/login",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/user/change-password",
+      "cluster": "/rest/user/change-password",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/user/reset-password",
+      "cluster": "/rest/user/reset-password",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/user/whoami",
+      "cluster": "/rest/user/whoami",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/saveLoginIp",
+      "cluster": "/rest/saveLoginIp",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/deluxe-membership",
+      "cluster": "/rest/deluxe-membership",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/api/Addresss",
+      "cluster": "/api/Addresss",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/delivery-method",
+      "cluster": "/delivery-method",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/address/create",
+      "cluster": "/address/create",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/api/Recycles",
+      "cluster": "/api/Recycles",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/admin",
+      "cluster": "/rest/admin",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/application-configuration",
+      "cluster": "/application-configuration",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/country-mapping",
+      "cluster": "/rest/country-mapping",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/coding-challenge",
+      "cluster": "/coding-challenge",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/application-version",
+      "cluster": "/application-version",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/api/BasketItems",
+      "cluster": "/api/BasketItems",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/search",
+      "cluster": "/search",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/profile",
+      "cluster": "/profile",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/dataerasure",
+      "cluster": "/dataerasure",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/login",
+      "cluster": "/login",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/accounting",
+      "cluster": "/accounting",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/basket",
+      "cluster": "/basket",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/order-history",
+      "cluster": "/order-history",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/recycle",
+      "cluster": "/recycle",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/address/saved",
+      "cluster": "/address/saved",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/saved-payment-methods",
+      "cluster": "/saved-payment-methods",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/wallet",
+      "cluster": "/wallet",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/contact",
+      "cluster": "/contact",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/complain",
+      "cluster": "/complain",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/chatbot",
+      "cluster": "/chatbot",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/about",
+      "cluster": "/about",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/photo-wall",
+      "cluster": "/photo-wall",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/deluxe-membership",
+      "cluster": "/deluxe-membership",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/score-board",
+      "cluster": "/score-board",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/assets/i18n/",
+      "cluster": "/assets/i18n",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/api/Products",
+      "cluster": "/api/Products",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/address/select",
+      "cluster": "/address/select",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/track-order",
+      "cluster": "/rest/track-order",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/captcha",
+      "cluster": "/rest/captcha",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/api/SecurityAnswers",
+      "cluster": "/api/SecurityAnswers",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/api/SecurityQuestions",
+      "cluster": "/api/SecurityQuestions",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/user/security-question",
+      "cluster": "/rest/user/security-question",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/api/Quantitys",
+      "cluster": "/api/Quantitys",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/products",
+      "cluster": "/rest/products",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/reviews",
+      "cluster": "/reviews",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/2fa/enter",
+      "cluster": "/2fa/enter",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/forgot-password",
+      "cluster": "/forgot-password",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/register",
+      "cluster": "/register",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/api/Complaints",
+      "cluster": "/api/Complaints",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/file-upload",
+      "cluster": "/file-upload",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": true,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/image-captcha/",
+      "cluster": "/rest/image-captcha",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/user",
+      "cluster": "/rest/user",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/erasure-request",
+      "cluster": "/erasure-request",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/data-export",
+      "cluster": "/data-export",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/wallet/balance",
+      "cluster": "/rest/wallet/balance",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/api/Deliverys",
+      "cluster": "/api/Deliverys",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/api/Cards",
+      "cluster": "/api/Cards",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/order-summary",
+      "cluster": "/order-summary",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/order-history",
+      "cluster": "/rest/order-history",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/orders",
+      "cluster": "/orders",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/track-result/new",
+      "cluster": "/track-result/new",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/order-completion",
+      "cluster": "/order-completion",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/payment",
+      "cluster": "/payment",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/track-result",
+      "cluster": "/track-result",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/memories",
+      "cluster": "/rest/memories",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/api/Hints",
+      "cluster": "/api/Hints",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/chatbot/conversation",
+      "cluster": "/chatbot/conversation",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/rest/chat",
+      "cluster": "/rest/chat",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 6,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "JS_Analysis"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/ftp/coupons_2013.md.bak",
+      "cluster": "/ftp/coupons_2013.md.bak",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": true,
+      "source": [
+        "HTML_Link"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/ftp/quarantine",
+      "cluster": "/ftp/quarantine",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "HTML(HTML_Link)"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/ftp/eastere.gg",
+      "cluster": "/ftp/eastere.gg",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": true,
+      "source": [
+        "HTML_Link"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/ftp/encrypt.pyc",
+      "cluster": "/ftp/encrypt.pyc",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": true,
+      "source": [
+        "HTML_Link"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/ftp/package-lock.json.bak",
+      "cluster": "/ftp/package-lock.json.bak",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": true,
+      "source": [
+        "HTML_Link"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/ftp/suspicious_errors.yml",
+      "cluster": "/ftp/suspicious_errors.yml",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": true,
+      "source": [
+        "HTML_Link"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/ftp/package.json.bak",
+      "cluster": "/ftp/package.json.bak",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": true,
+      "source": [
+        "HTML_Link"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/juice-shop/rolldown-runtime-BoHGiXSq.js",
+      "cluster": "/juice-shop/rolldown-runtime-BoHGiXSq.js",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "HTML(HTML_Link)"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/juice-shop/chunk-DHEKzj3R.js",
+      "cluster": "/juice-shop/chunk-DHEKzj3R.js",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "HTML(HTML_Link)"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/juice-shop/chunk-DBPdFzgj.js",
+      "cluster": "/juice-shop/chunk-DBPdFzgj.js",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "HTML(HTML_Link)"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/juice-shop/polyfills.js",
+      "cluster": "/juice-shop/polyfills.js",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "HTML(HTML_Script)"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/juice-shop/chunk-BdI65YMF.js",
+      "cluster": "/juice-shop/chunk-BdI65YMF.js",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "HTML(HTML_Link)"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/ftp/.\\..",
+      "cluster": "/ftp/./..",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": true,
+      "source": [
+        "HTML_Link"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/juice-shop/main.js",
+      "cluster": "/juice-shop/main.js",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "HTML(HTML_Script)"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    },
+    {
+      "url": "http://localhost:3000/juice-shop/scripts.js",
+      "cluster": "/juice-shop/scripts.js",
+      "method": "GET",
+      "confidence": "MEDIUM",
+      "confidence_score": 3,
+      "observed_status": [],
+      "params": [],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [],
+        "openapi": [],
+        "runtime": []
+      },
+      "headers_detail": {
+        "vary": [],
+        "cookies": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "source": [
+        "HTML(HTML_Script)"
+      ],
+      "admin_panel": false,
+      "auth_classification": [],
+      "file_upload_candidate": false,
+      "screenshot": null,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "dynamic_value_required": false,
+      "dynamic_value_note": ""
+    }
+  ],
+  "secrets": [
+    {
+      "content": "donotreply@owasp-juice.shop",
+      "type": "SecurityTxt_Contact_Email",
+      "source": "http://localhost:3000/.well-known/security.txt"
+    },
+    {
+      "content": "https://keybase.io/bkimminich/pgp_keys.asc?fingerprint=19c01cb7157e4645e9e2c863062a85a8cbfbdcda",
+      "type": "SecurityTxt_Encryption_Key",
+      "source": "http://localhost:3000/.well-known/security.txt"
+    },
+    {
+      "content": "1AbKfgvw9psQ41NbLi8kufDQTezwG8DRZm",
+      "type": "Bitcoin_Address",
+      "source": "http://localhost:3000/main.js"
+    },
+    {
+      "content": "0x0f933ab9fCAAA782D0279C300D73750e1311EAE6",
+      "type": "Ethereum_Address",
+      "source": "http://localhost:3000/main.js"
+    },
+    {
+      "content": "0x0f933ab9fcaaa782d0279c300d73750e1311eae6",
+      "type": "Ethereum_Address",
+      "source": "http://localhost:3000/main.js"
+    },
+    {
+      "content": "0x8343d2eb2B13A2495De435a1b15e85b98115Ce05",
+      "type": "Ethereum_Address",
+      "source": "http://localhost:3000/main.js"
+    },
+    {
+      "content": "0xf4817631372dca68a25a18eb7a0b36d54f3dbcf7",
+      "type": "Ethereum_Address",
+      "source": "http://localhost:3000/main.js"
+    }
+  ],
+  "cors_issues": [],
+  "credentials": [],
+  "graphql": [],
+  "openapi": [],
+  "sourcemaps": [],
+  "comments": [],
+  "robots_disallowed": [
+    "/ftp"
+  ],
+  "robots_allowed": [],
+  "target_response_headers": {
+    "Accept-Ranges": "bytes",
+    "Access-Control-Allow-Origin": "*",
+    "Cache-Control": "public, max-age=0",
+    "Connection": "keep-alive",
+    "Content-Encoding": "gzip",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Mon, 24 Aug 2026 18:57:04 GMT",
+    "Etag": "W/\"25a9-1a035214be6\"",
+    "Feature-Policy": "payment 'self'",
+    "Keep-Alive": "timeout=5",
+    "Last-Modified": "Mon, 24 Aug 2026 18:56:09 GMT",
+    "Transfer-Encoding": "chunked",
+    "Vary": "Accept-Encoding",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Recruiting": "/#/jobs"
+  },
+  "tech_stack": [],
+  "extracted_data": [
+    {
+      "type": "Email",
+      "value": "donotreply@owasp-juice.shop",
+      "source_url": "http://localhost:3000/.well-known/security.txt"
+    }
+  ],
+  "js_orphan_params": [
+    {
+      "js_file": "http://localhost:3000/polyfills.js",
+      "params": [
+        "isPeriodic",
+        "isRefreshable"
+      ]
+    },
+    {
+      "js_file": "http://localhost:3000/chunk-BdI65YMF.js",
+      "params": [
+        "__scheduler_tick__"
+      ]
+    },
+    {
+      "js_file": "http://localhost:3000/main.js",
+      "params": [
+        "address",
+        "challenge",
+        "data",
+        "feedback",
+        "params",
+        "productData",
+        "reviewData",
+        "title",
+        "url"
+      ]
+    }
+  ],
+  "socketio_endpoints": [],
+  "crt_subdomains": [],
+  "waf_findings": [],
+  "tls_findings": [
+    {
+      "issue": "No_HTTPS",
+      "severity": "HIGH",
+      "detail": "Target is HTTP only \u2014 no TLS"
+    }
+  ],
+  "header_audit": [
+    {
+      "issue": "Missing_Strict_Transport_Security",
+      "severity": "HIGH",
+      "header": "Strict-Transport-Security",
+      "detail": "HSTS not set \u2014 forces plain HTTP fallback possible"
+    },
+    {
+      "issue": "Missing_Content_Security_Policy",
+      "severity": "MEDIUM",
+      "header": "Content-Security-Policy",
+      "detail": "CSP not set \u2014 XSS risk elevated"
+    },
+    {
+      "issue": "Missing_Referrer_Policy",
+      "severity": "LOW",
+      "header": "Referrer-Policy",
+      "detail": "Referrer leakage uncontrolled"
+    },
+    {
+      "issue": "Missing_Permissions_Policy",
+      "severity": "LOW",
+      "header": "Permissions-Policy",
+      "detail": "Feature/permissions policy not set"
+    }
+  ],
+  "dns_findings": [],
+  "sensitive_files": [],
+  "js_libs": [],
+  "cloud_probes": [],
+  "page_graph": {
+    "nodes": [
+      {
+        "url": "http://localhost:3000/.well-known/csaf/provider-metadata.json",
+        "type": "page",
+        "confidence": "HIGH"
+      },
+      {
+        "url": "http://localhost:3000/rolldown-runtime-BoHGiXSq.js",
+        "type": "page",
+        "confidence": "LOW"
+      },
+      {
+        "url": "http://localhost:3000/chunk-DBPdFzgj.js",
+        "type": "page",
+        "confidence": "LOW"
+      },
+      {
+        "url": "http://localhost:3000/chunk-BdI65YMF.js",
+        "type": "page",
+        "confidence": "LOW"
+      },
+      {
+        "url": "http://localhost:3000/chunk-DHEKzj3R.js",
+        "type": "page",
+        "confidence": "LOW"
+      },
+      {
+        "url": "http://localhost:3000/polyfills.js",
+        "type": "page",
+        "confidence": "LOW"
+      },
+      {
+        "url": "http://localhost:3000/scripts.js",
+        "type": "page",
+        "confidence": "LOW"
+      },
+      {
+        "url": "http://localhost:3000/main.js",
+        "type": "page",
+        "confidence": "LOW"
+      },
+      {
+        "url": "http://localhost:3000/juice-shop/juice-shop",
+        "type": "page",
+        "confidence": "HIGH"
+      },
+      {
+        "url": "http://localhost:3000/ftp/quarantine",
+        "type": "page",
+        "confidence": "MEDIUM"
+      },
+      {
+        "url": "http://localhost:3000/ftp/acquisitions.md",
+        "type": "page"
+      },
+      {
+        "url": "http://localhost:3000/ftp/announcement_encrypted.md",
+        "type": "page"
+      },
+      {
+        "url": "http://localhost:3000/ftp/coupons_2013.md.bak",
+        "type": "page",
+        "auth_required": true,
+        "confidence": "MEDIUM"
+      },
+      {
+        "url": "http://localhost:3000/ftp/eastere.gg",
+        "type": "page",
+        "auth_required": true,
+        "confidence": "MEDIUM"
+      },
+      {
+        "url": "http://localhost:3000/ftp/encrypt.pyc",
+        "type": "page",
+        "auth_required": true,
+        "confidence": "MEDIUM"
+      },
+      {
+        "url": "http://localhost:3000/ftp/incident-support.kdbx",
+        "type": "page"
+      },
+      {
+        "url": "http://localhost:3000/ftp/legal.md",
+        "type": "page"
+      },
+      {
+        "url": "http://localhost:3000/ftp/package-lock.json.bak",
+        "type": "page",
+        "auth_required": true,
+        "confidence": "MEDIUM"
+      },
+      {
+        "url": "http://localhost:3000/ftp/package.json.bak",
+        "type": "page",
+        "auth_required": true,
+        "confidence": "MEDIUM"
+      },
+      {
+        "url": "http://localhost:3000/ftp/suspicious_errors.yml",
+        "type": "page",
+        "auth_required": true,
+        "confidence": "MEDIUM"
+      },
+      {
+        "url": "http://localhost:3000/juice-shop/rolldown-runtime-BoHGiXSq.js",
+        "type": "page",
+        "confidence": "MEDIUM"
+      },
+      {
+        "url": "http://localhost:3000/juice-shop/chunk-DBPdFzgj.js",
+        "type": "page",
+        "confidence": "MEDIUM"
+      },
+      {
+        "url": "http://localhost:3000/juice-shop/chunk-BdI65YMF.js",
+        "type": "page",
+        "confidence": "MEDIUM"
+      },
+      {
+        "url": "http://localhost:3000/juice-shop/chunk-DHEKzj3R.js",
+        "type": "page",
+        "confidence": "MEDIUM"
+      },
+      {
+        "url": "http://localhost:3000/juice-shop/polyfills.js",
+        "type": "page",
+        "confidence": "MEDIUM"
+      },
+      {
+        "url": "http://localhost:3000/juice-shop/scripts.js",
+        "type": "page",
+        "confidence": "MEDIUM"
+      },
+      {
+        "url": "http://localhost:3000/juice-shop/main.js",
+        "type": "page",
+        "confidence": "MEDIUM"
+      },
+      {
+        "url": "http://localhost:3000/ftp/.\\..",
+        "type": "page",
+        "auth_required": true,
+        "confidence": "MEDIUM"
+      },
+      {
+        "url": "http://localhost:3000/ftp/quarantine/juicy_malware_linux_amd_64.url",
+        "type": "page"
+      },
+      {
+        "url": "http://localhost:3000/ftp/quarantine/juicy_malware_linux_arm_64.url",
+        "type": "page"
+      },
+      {
+        "url": "http://localhost:3000/ftp/quarantine/juicy_malware_macos_64.url",
+        "type": "page"
+      },
+      {
+        "url": "http://localhost:3000/ftp/quarantine/juicy_malware_windows_64.exe.url",
+        "type": "page"
+      }
+    ],
+    "edges": [
+      {
+        "from_url": "http://localhost:3000/.well-known/csaf/provider-metadata.json",
+        "to_url": "http://localhost:3000/rolldown-runtime-BoHGiXSq.js",
+        "via": "HTML_Link",
+        "depth": 1
+      },
+      {
+        "from_url": "http://localhost:3000/.well-known/csaf/provider-metadata.json",
+        "to_url": "http://localhost:3000/chunk-DBPdFzgj.js",
+        "via": "HTML_Link",
+        "depth": 1
+      },
+      {
+        "from_url": "http://localhost:3000/.well-known/csaf/provider-metadata.json",
+        "to_url": "http://localhost:3000/chunk-BdI65YMF.js",
+        "via": "HTML_Link",
+        "depth": 1
+      },
+      {
+        "from_url": "http://localhost:3000/.well-known/csaf/provider-metadata.json",
+        "to_url": "http://localhost:3000/chunk-DHEKzj3R.js",
+        "via": "HTML_Link",
+        "depth": 1
+      },
+      {
+        "from_url": "http://localhost:3000/.well-known/csaf/provider-metadata.json",
+        "to_url": "http://localhost:3000/polyfills.js",
+        "via": "HTML_Script",
+        "depth": 1
+      },
+      {
+        "from_url": "http://localhost:3000/.well-known/csaf/provider-metadata.json",
+        "to_url": "http://localhost:3000/scripts.js",
+        "via": "HTML_Script",
+        "depth": 1
+      },
+      {
+        "from_url": "http://localhost:3000/.well-known/csaf/provider-metadata.json",
+        "to_url": "http://localhost:3000/main.js",
+        "via": "HTML_Script",
+        "depth": 1
+      },
+      {
+        "from_url": "http://localhost:3000/.well-known/csaf/provider-metadata.json",
+        "to_url": "http://localhost:3000/juice-shop/juice-shop",
+        "via": "JSON_Path",
+        "depth": 2
+      },
+      {
+        "from_url": "http://localhost:3000/juice-shop/juice-shop",
+        "to_url": "http://localhost:3000/ftp/quarantine",
+        "via": "HTML_Link",
+        "depth": 2
+      },
+      {
+        "from_url": "http://localhost:3000/juice-shop/juice-shop",
+        "to_url": "http://localhost:3000/ftp/acquisitions.md",
+        "via": "HTML_Link",
+        "depth": 2
+      },
+      {
+        "from_url": "http://localhost:3000/juice-shop/juice-shop",
+        "to_url": "http://localhost:3000/ftp/announcement_encrypted.md",
+        "via": "HTML_Link",
+        "depth": 2
+      },
+      {
+        "from_url": "http://localhost:3000/juice-shop/juice-shop",
+        "to_url": "http://localhost:3000/ftp/coupons_2013.md.bak",
+        "via": "HTML_Link",
+        "depth": 2
+      },
+      {
+        "from_url": "http://localhost:3000/juice-shop/juice-shop",
+        "to_url": "http://localhost:3000/ftp/eastere.gg",
+        "via": "HTML_Link",
+        "depth": 2
+      },
+      {
+        "from_url": "http://localhost:3000/juice-shop/juice-shop",
+        "to_url": "http://localhost:3000/ftp/encrypt.pyc",
+        "via": "HTML_Link",
+        "depth": 2
+      },
+      {
+        "from_url": "http://localhost:3000/juice-shop/juice-shop",
+        "to_url": "http://localhost:3000/ftp/incident-support.kdbx",
+        "via": "HTML_Link",
+        "depth": 2
+      },
+      {
+        "from_url": "http://localhost:3000/juice-shop/juice-shop",
+        "to_url": "http://localhost:3000/ftp/legal.md",
+        "via": "HTML_Link",
+        "depth": 2
+      },
+      {
+        "from_url": "http://localhost:3000/juice-shop/juice-shop",
+        "to_url": "http://localhost:3000/ftp/package-lock.json.bak",
+        "via": "HTML_Link",
+        "depth": 2
+      },
+      {
+        "from_url": "http://localhost:3000/juice-shop/juice-shop",
+        "to_url": "http://localhost:3000/ftp/package.json.bak",
+        "via": "HTML_Link",
+        "depth": 2
+      },
+      {
+        "from_url": "http://localhost:3000/juice-shop/juice-shop",
+        "to_url": "http://localhost:3000/ftp/suspicious_errors.yml",
+        "via": "HTML_Link",
+        "depth": 2
+      },
+      {
+        "from_url": "http://localhost:3000/juice-shop/juice-shop",
+        "to_url": "http://localhost:3000/juice-shop/rolldown-runtime-BoHGiXSq.js",
+        "via": "HTML_Link",
+        "depth": 3
+      },
+      {
+        "from_url": "http://localhost:3000/juice-shop/juice-shop",
+        "to_url": "http://localhost:3000/juice-shop/chunk-DBPdFzgj.js",
+        "via": "HTML_Link",
+        "depth": 3
+      },
+      {
+        "from_url": "http://localhost:3000/juice-shop/juice-shop",
+        "to_url": "http://localhost:3000/juice-shop/chunk-BdI65YMF.js",
+        "via": "HTML_Link",
+        "depth": 3
+      },
+      {
+        "from_url": "http://localhost:3000/juice-shop/juice-shop",
+        "to_url": "http://localhost:3000/juice-shop/chunk-DHEKzj3R.js",
+        "via": "HTML_Link",
+        "depth": 3
+      },
+      {
+        "from_url": "http://localhost:3000/juice-shop/juice-shop",
+        "to_url": "http://localhost:3000/juice-shop/polyfills.js",
+        "via": "HTML_Script",
+        "depth": 3
+      },
+      {
+        "from_url": "http://localhost:3000/juice-shop/juice-shop",
+        "to_url": "http://localhost:3000/juice-shop/scripts.js",
+        "via": "HTML_Script",
+        "depth": 3
+      },
+      {
+        "from_url": "http://localhost:3000/juice-shop/juice-shop",
+        "to_url": "http://localhost:3000/juice-shop/main.js",
+        "via": "HTML_Script",
+        "depth": 3
+      },
+      {
+        "from_url": "http://localhost:3000/ftp/coupons_2013.md.bak",
+        "to_url": "http://localhost:3000/ftp/.\\..",
+        "via": "HTML_Link",
+        "depth": 3
+      },
+      {
+        "from_url": "http://localhost:3000/ftp/coupons_2013.md.bak",
+        "to_url": "http://localhost:3000/ftp/quarantine/juicy_malware_linux_amd_64.url",
+        "via": "HTML_Link",
+        "depth": 3
+      },
+      {
+        "from_url": "http://localhost:3000/ftp/coupons_2013.md.bak",
+        "to_url": "http://localhost:3000/ftp/quarantine/juicy_malware_linux_arm_64.url",
+        "via": "HTML_Link",
+        "depth": 3
+      },
+      {
+        "from_url": "http://localhost:3000/ftp/coupons_2013.md.bak",
+        "to_url": "http://localhost:3000/ftp/quarantine/juicy_malware_macos_64.url",
+        "via": "HTML_Link",
+        "depth": 3
+      },
+      {
+        "from_url": "http://localhost:3000/ftp/coupons_2013.md.bak",
+        "to_url": "http://localhost:3000/ftp/quarantine/juicy_malware_windows_64.exe.url",
+        "via": "HTML_Link",
+        "depth": 3
+      },
+      {
+        "from_url": "http://localhost:3000/juice-shop/rolldown-runtime-BoHGiXSq.js",
+        "to_url": "http://localhost:3000/juice-shop/chunk-DBPdFzgj.js",
+        "via": "HTML_Link",
+        "depth": 4
+      },
+      {
+        "from_url": "http://localhost:3000/juice-shop/rolldown-runtime-BoHGiXSq.js",
+        "to_url": "http://localhost:3000/juice-shop/chunk-BdI65YMF.js",
+        "via": "HTML_Link",
+        "depth": 4
+      },
+      {
+        "from_url": "http://localhost:3000/juice-shop/rolldown-runtime-BoHGiXSq.js",
+        "to_url": "http://localhost:3000/juice-shop/chunk-DHEKzj3R.js",
+        "via": "HTML_Link",
+        "depth": 4
+      },
+      {
+        "from_url": "http://localhost:3000/juice-shop/rolldown-runtime-BoHGiXSq.js",
+        "to_url": "http://localhost:3000/juice-shop/polyfills.js",
+        "via": "HTML_Script",
+        "depth": 4
+      },
+      {
+        "from_url": "http://localhost:3000/juice-shop/rolldown-runtime-BoHGiXSq.js",
+        "to_url": "http://localhost:3000/juice-shop/scripts.js",
+        "via": "HTML_Script",
+        "depth": 4
+      },
+      {
+        "from_url": "http://localhost:3000/juice-shop/rolldown-runtime-BoHGiXSq.js",
+        "to_url": "http://localhost:3000/juice-shop/main.js",
+        "via": "HTML_Script",
+        "depth": 4
+      }
+    ]
+  },
+  "agent_targets": [
+    {
+      "url": "http://localhost:3000/api/Challenges/",
+      "method": "GET",
+      "confidence": "CONFIRMED",
+      "params": [
+        "key"
+      ],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [
+          "key"
+        ],
+        "openapi": [],
+        "runtime": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "file_upload_candidate": false,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "priority_score": 13,
+      "source": [
+        "JS_Analysis"
+      ]
+    },
+    {
+      "url": "http://localhost:3000/v3/ip-country/",
+      "method": "GET",
+      "confidence": "HIGH",
+      "params": [
+        "callback",
+        "format",
+        "key"
+      ],
+      "params_detail": {
+        "query": [],
+        "form": [],
+        "js": [
+          "key",
+          "format",
+          "callback"
+        ],
+        "openapi": [],
+        "runtime": []
+      },
+      "form_fields_detail": [],
+      "auth_required": false,
+      "file_upload_candidate": false,
+      "observed_values": {},
+      "unauthenticated_api": false,
+      "sensitive_data_source": false,
+      "sensitive_signals": [],
+      "legacy_endpoint": false,
+      "legacy_reason": "",
+      "priority_score": 9,
+      "source": [
+        "JS_Analysis"
+      ]
+    }
+  ],
+  "whatweb_data": {}
+}
