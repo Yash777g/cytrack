@@ -10,7 +10,8 @@ import time
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, Field
 
-from store import Agent, ScanJob, ScanStatus, agents, new_id, run_fake_scan, scans
+from store import Agent, ScanJob, ScanStatus, agents, new_id, scans
+from core.crawler_service import start_crawl
 
 router = APIRouter(prefix="/scan", tags=["scan"])
 
@@ -66,7 +67,7 @@ async def start_scan(payload: ScanStartRequest):
     # that GET /agents/{id}/logs and the /ws/scan websocket both read from
     import asyncio
 
-    asyncio.create_task(run_fake_scan(job))
+    asyncio.create_task(start_crawl(job))
 
     return ScanStartResponse(job_id=job.id, agent_id=agent.id, status=job.status)
 
