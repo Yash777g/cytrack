@@ -12,6 +12,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from routers import agents, reports, scan, ws
+from routers import agents, dashboard, reports, scan, ws
 
 app = FastAPI(title="cytrack API", version="0.1.0")
 
@@ -26,6 +27,7 @@ app.add_middleware(
 app.include_router(scan.router)
 app.include_router(agents.router)
 app.include_router(reports.router)
+app.include_router(dashboard.router)
 app.include_router(ws.router)
 
 

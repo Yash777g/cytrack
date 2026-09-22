@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment / secrets
+.env
+.env.*
+
+# Scan artifacts & caches
+outputs/
+.sast_cache/
+scan_logs/
+spider_*.json
+*.report.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

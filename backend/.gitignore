@@ -1,8 +1,10 @@
- .venv/
-  __pycache__/
-  *.pyc
-   .env
-    outputs/
-    crawler/crawl_output.json
-    test.json
-     *.report.json
+.venv/
+__pycache__/
+*.pyc
+.env
+outputs/
+crawler/crawl_output.json
+test.json
+*.report.json
+.sast_cache/
+Hellhound-Spider/spider_*.json

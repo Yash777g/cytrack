@@ -15,6 +15,10 @@ from core.crawler_service import start_crawl
 
 router = APIRouter(prefix="/scan", tags=["scan"])
 
+# Strong references to in-flight background crawl tasks so the event loop
+# doesn't garbage-collect them before they finish.
+_background_tasks: set = set()
+
 
 class ScanStartRequest(BaseModel):
     target_url: str = Field(..., examples=["https://example.com"])
@@ -63,11 +67,14 @@ async def start_scan(payload: ScanStartRequest):
     )
     scans[job.id] = job
 
-    # fire-and-forget background crawl simulation; publishes log lines
-    # that GET /agents/{id}/logs and the /ws/scan websocket both read from
+    # background crawl + analysis; publishes log lines that
+    # GET /agents/{id}/logs and the /ws/scan websocket both read from.
+    # Keep a reference so the task isn't garbage-collected mid-run.
     import asyncio
 
-    asyncio.create_task(start_crawl(job))
+    task = asyncio.create_task(start_crawl(job))
+    _background_tasks.add(task)
+    task.add_done_callback(_background_tasks.discard)
 
     return ScanStartResponse(job_id=job.id, agent_id=agent.id, status=job.status)
 

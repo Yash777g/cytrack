@@ -8,7 +8,6 @@ in — the router code doesn't need to change, only this module.
 """
 import asyncio
 import itertools
-import time
 import uuid
 from enum import Enum
 from typing import Dict, List, Optional
@@ -84,37 +83,3 @@ def publish_log(agent_id: str, line: str) -> None:
     agent_logs.setdefault(agent_id, []).append(line)
     for q in _subscribers.get(agent_id, []):
         q.put_nowait(line)
-
-
-async def run_fake_scan(job: ScanJob) -> None:
-    """Background task that pretends to crawl and streams log lines.
-
-    Replace the body of this loop with a call into the real crawler
-    (see the `crawler/` and `agents/` folders in crawler-deephat-implement)
-    once that integration point is ready.
-    """
-    agent = agents[job.agent_id]
-    publish_log(agent.id, f"[{job.id}] scan started for {job.target_url} (depth={job.depth})")
-
-    for page in range(1, job.depth + 1):
-        job_current = scans.get(job.id)
-        if job_current is None or job_current.status != ScanStatus.RUNNING:
-            publish_log(agent.id, f"[{job.id}] scan stopped early at depth {page}")
-            return
-        await asyncio.sleep(1)
-        publish_log(agent.id, f"[{job.id}] crawled page depth={page} -> found 12 links, 3 new hosts")
-
-    job.status = ScanStatus.COMPLETED
-    job.finished_at = time.time()
-    agent.status = ScanStatus.COMPLETED
-    publish_log(agent.id, f"[{job.id}] scan completed")
-
-    report = Report(
-        id=new_id("rpt"),
-        agent_id=agent.id,
-        scan_id=job.id,
-        title=f"Scan report — {job.target_url}",
-        created_at=time.time(),
-        summary=f"Crawled {job.depth} levels deep from {job.target_url}.",
-    )
-    reports[report.id] = report

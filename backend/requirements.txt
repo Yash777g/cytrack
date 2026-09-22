@@ -1,4 +1,10 @@
-fastapi==0.115.0
-uvicorn[standard]==0.30.6
-pydantic==2.9.2
-websockets==13.1
+fastapi>=0.115.12
+uvicorn[standard]>=0.30.6
+pydantic>=2.9.2
+websockets>=13.1
+
+# Hellhound spider (installed from local source)
+# Run: pip install -e backend/Hellhound-Spider
+# aiohttp>=3.9.0
+# beautifulsoup4>=4.12.0
+# lxml>=5.0.0

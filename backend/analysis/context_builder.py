@@ -52,9 +52,6 @@ class ContextBuilder:
 
         important = []
 
-        print("\nDEBUG ENDPOINTS:")
-        print(self.context.get("endpoints"))
-
         keywords = [
 
             "login",
@@ -339,14 +336,9 @@ class ContextBuilder:
 
         endpoints = self.context.get("endpoints", [])
 
-        print("\nDEBUG POTENTIAL ENDPOINTS")
-        print(endpoints)
-
         seen = set()
 
         for endpoint in endpoints:
-
-            print("DEBUG URL:", endpoint.get("url"))
 
             url = endpoint.get("url", "")
 

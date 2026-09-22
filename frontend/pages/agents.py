@@ -454,9 +454,10 @@ def _build_page(agents: list, feed: list) -> str:
 def render() -> None:
     from styles.theme import get_css_tokens, get_initial_theme
     from components.layout import render_layout
+    import api_client
 
-    agents = _MOCK_AGENTS
-    feed   = _MOCK_FEED
+    agents = api_client.get_agents()
+    feed   = api_client.get_agent_feed()
 
     page_html = f"""
     <style>{_CSS}</style>

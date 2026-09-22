@@ -343,14 +343,24 @@ def _report_detail(r: dict) -> str:
 
 
 def _build_page(active_id: str, tab: str) -> str:
+import json
+
+def _build_page(reports: list[dict], active_id: str, tab: str) -> str:
     # report list
     items = "".join(_report_item(r, active_id, tab) for r in _MOCK_REPORTS)
+    items = "".join(_report_item(r, active_id, tab) for r in reports)
     if not items:
         items = '<div style="padding:24px;text-align:center;color:var(--text-m);font-size:13px">No reports match this filter</div>'
 
     # detail
     active_report = next((r for r in _MOCK_REPORTS if r["id"] == active_id), None)
     detail_html = _report_detail(active_report) if active_report else f"""
+    active_report = next((r for r in reports if r["id"] == active_id), None)
+    if active_report is None and reports:
+        active_report = reports[0]
+        active_id = active_report["id"]
+
+    detail_html = _report_detail(active_report) if active_report else """
     <div class="detail-empty">
       <div class="detail-empty-icon">📋</div>
       <div class="detail-empty-txt">Select a report to view details</div>
@@ -391,12 +401,23 @@ _ALL_REPORTS_JS = "const _reports = " + str([
      "low": r["low"], "info": r["info"], "findings": r["findings"]}
     for r in _MOCK_REPORTS
 ]).replace("True","true").replace("False","false").replace("None","null") + ";"
+def _build_js(reports: list[dict], active_id: str) -> str:
+    clean_reports = [
+        {"id": r["id"], "target": r["target"], "date": r["date"], "time": r["time"],
+         "duration": r["duration"], "high": r["high"], "medium": r["medium"],
+         "low": r["low"], "info": r["info"], "findings": r.get("findings", [])}
+        for r in reports
+    ]
+    reports_json = json.dumps(clean_reports)
 
 _JS = f"""
+    return f"""
 <script>
 {_ALL_REPORTS_JS}
+const _reports = {reports_json};
 
 let _activeId  = '{_MOCK_REPORTS[0]["id"]}';
+let _activeId  = '{active_id}';
 let _activeTab = 'all';
 
 function selectReport(id) {{
@@ -495,8 +516,16 @@ function exportReport(id) {{
 </script>
 """
 
+
 # ── RENDER ────────────────────────────────────────────────────────────────────
 def render() -> None:
     active_id = _MOCK_REPORTS[0]["id"]
     page_html = f"<style>{_CSS}</style>" + _build_page(active_id, "all") + _JS
+    import api_client
+    reports = api_client.get_reports()
+    if not reports:
+        reports = _MOCK_REPORTS
+
+    active_id = reports[0]["id"]
+    page_html = f"<style>{_CSS}</style>" + _build_page(reports, active_id, "all") + _build_js(reports, active_id)
     render_layout(active_page="reports", page_content_html=page_html, height=900)

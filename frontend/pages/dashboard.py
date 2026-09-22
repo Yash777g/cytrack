@@ -28,35 +28,10 @@ from components.chart     import (
     estimated_time_sparkline,
     CHART_CSS,
 )
-from components.agent_card  import agent_table,  AGENT_CSS,  MOCK_AGENTS
-from components.alert_feed  import alert_feed, vuln_list, ALERT_CSS, MOCK_ALERTS, MOCK_VULNS
+from components.agent_card  import agent_table,  AGENT_CSS
+from components.alert_feed  import alert_feed, vuln_list, ALERT_CSS
 
 
-# ── MOCK DATA (replace with api_client calls when FastAPI is ready) ───────────
-
-_MOCK_STATS = {
-    "active_agents":    12,
-    "agents_working":   3,
-    "targets":          8,
-    "targets_critical": 2,
-    "scan_progress":    63,
-    "reports_generated":24,
-}
-
-_MOCK_SCAN = {
-    "overall_progress": 63,
-    "targets_scanned":  5,
-    "total_targets":    8,
-    "running_agents":   3,
-    "estimated_minutes":85,
-}
-
-_MOCK_REPORT_BREAKDOWN = {
-    "high":   6,
-    "medium": 7,
-    "low":    4,
-    "info":   1,
-}
 
 
 # ── PAGE CSS ──────────────────────────────────────────────────────────────────
@@ -174,15 +149,17 @@ def _build_dashboard_html() -> str:
     """
     Assembles the full dashboard inner HTML.
     Swap MOCK_* constants for api_client calls here when FastAPI is ready.
+    Assembles the full dashboard inner HTML from live backend data.
     """
+    import api_client
 
-    # ── data (mock for now) ──
-    stats     = _MOCK_STATS
-    scan      = _MOCK_SCAN
-    breakdown = _MOCK_REPORT_BREAKDOWN
-    agents    = MOCK_AGENTS[:5]          # show top 5 in dashboard table
-    alerts    = MOCK_ALERTS
-    vulns     = MOCK_VULNS
+    # ── live data from api_client ──
+    stats     = api_client.get_dashboard_stats()
+    scan      = api_client.get_scan_progress_data()
+    breakdown = api_client.get_report_breakdown()
+    agents    = api_client.get_agents()[:5]
+    alerts    = api_client.get_recent_alerts()
+    vulns     = api_client.get_top_vulns()
 
     # ── build each section ──
     stat_row          = stat_cards_row(stats)
