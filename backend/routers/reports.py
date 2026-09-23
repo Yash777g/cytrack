@@ -248,14 +248,11 @@ async def get_report(report_id: str):
 
 @router.get("/{report_id}/export")
 async def export_report(report_id: str):
-    report = reports.get(report_id)
-    if report is None:
-    reports = load_all_persisted_reports()
-    match = next((r for r in reports if r["id"] == report_id or r.get("job_id") == report_id), None)
+    all_reports = load_all_persisted_reports()
+    match = next((r for r in all_reports if r["id"] == report_id or r.get("job_id") == report_id), None)
     if match is None:
         raise HTTPException(status_code=404, detail="report not found")
 
-    payload = json.dumps(report.model_dump(), indent=2)
     payload = json.dumps(match, indent=2)
     return StreamingResponse(
         iter([payload]),
